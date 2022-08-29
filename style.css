@@ -492,6 +492,16 @@ footer {
 .footer-container p {
     color: black;
     font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.footer-container a {
+    text-decoration: none;
+    color: black;
+}
+.footer-container a:hover {
+    text-decoration: underline;
+    color: black;
 }
 
 .left, .right {
