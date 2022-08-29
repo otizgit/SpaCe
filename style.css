@@ -11,7 +11,7 @@ html {
 
 .scroll {
     position: fixed;
-    bottom: 27px;
+    bottom: 45px;
     right: 20px;
     width: 45px;
     height: 45px;
@@ -31,6 +31,11 @@ html {
 }
 .scroll:hover {
     transform: translateY(-5px);
+}
+@media screen and (max-width: 850px) {
+    .scroll {
+        bottom: 30px;
+    }
 }
 @media screen and (min-width: 1700px) {
     .scroll {
@@ -119,7 +124,7 @@ nav ul li a:hover {
     display: none;
 }
 
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 850px) {
     nav ul li a {
         font-size: 16px;
         /* margin: 0; */
@@ -163,7 +168,7 @@ nav ul li a:hover {
     /* Also with the opacity, after the above method, we will notice that the texts appear squashed as a result of the shrinking of the nav, so we set the opacity initially to 0 then when checked, we set the opacity to one with a transistion of 250ms ease-in-out then after ease-in-out we set the time for the opacity to become 1 which is 250ms, then we come over to the a tag itself and set a transistion for the reverse, that is when we close the menu to opacity 150ms, this will take a shorter time to reset the opacity again to zero and this way we see the texts kind of moving in with the nav bar */
 }
 
-@media screen and (min-width: 1700px) {
+@media screen and (min-width: 1800px) {
     header {
         height: 100px;
     }
@@ -293,7 +298,7 @@ nav ul li a:hover {
     }
     .image:hover .texts{
         opacity: 1;
-        bottom: 40%;
+        bottom: 38%;
     }
 }
 
@@ -388,12 +393,12 @@ nav ul li a:hover {
     border-radius: 50%;
 }
 .user-info i {
-    color: rgba(0, 0, 255, 0.795);
+    color: rgb(29, 155, 240);
     margin-left: 10px;
     font-size: 15px;
 }
 .user-info small {
-    color: rgba(86, 86, 255, 0.795);
+    color: grey;
 }
 .testimonial-1:hover, .testimonial-2:hover, .testimonial-3:hover {
     transform: translateY(-15px);
@@ -541,6 +546,7 @@ footer {
     width: 100%;
     color: white;
     margin-top: 10px;
+    padding-bottom: 5px;
     font-size: 12px;
     font-style: italic;
     text-align: center;
@@ -569,8 +575,13 @@ footer {
     .footer-container p {
         font-size: 13px;
     }
+    .socials i {
+        font-size: 32px;
+    }
     .end {
         margin-top: 7px;
+        font-size: 9px;
+        padding-bottom: 4px;
     }
     .me {
         width: 27px;
